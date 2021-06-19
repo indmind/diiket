@@ -1,0 +1,23 @@
+#hero {
+    background-color: #f2f3f4;
+}
+
+#hero h1 {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+#hero p {
+    font-size: 24px;
+    font-weight: 300;
+    color: #8da2b5;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+#hero span {
+    font-weight: 400;
+    color: #009EBA;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
