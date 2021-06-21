@@ -10,15 +10,15 @@ export default function RandomUser() {
     async function fetchData() {
       setUser(null);
 
-      const res = await axios.get('https://randomuser.me/api');
+      const { data } = await axios.get('https://randomuser.me/api');
 
-      setUser(res.data.results[0]);
+      setUser(data.results[0]);
     }
 
     // random user tiap 3 detik
     const intervalId = setInterval(fetchData, 3000);
 
-    return () => clearInterval(intervalId);  
+    return () => clearInterval(intervalId);
   }, []);
 
   return (

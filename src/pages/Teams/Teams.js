@@ -1,8 +1,8 @@
 import './Teams.css';
 
-import alvin from '../assets/images/teams/alvin.png';
-import jalu from '../assets/images/teams/jalu.png';
-import tio from '../assets/images/teams/tio.png';
+import alvin from '../../assets/images/teams/alvin.png';
+import jalu from '../../assets/images/teams/jalu.png';
+import tio from '../../assets/images/teams/tio.png';
 
 export default function Teams() {
   return (
