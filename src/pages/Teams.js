@@ -6,56 +6,56 @@ import tio from '../assets/images/teams/tio.png';
 
 export default function Teams() {
   return (
-    <section class="section-team">
-      <div class="container">
-        <div class="row justify-content-center text-center">
-          <div class="col-md-8">
-            <div class="header-section">
-              <h3 class="small-title">Tentang Kami</h3>
-              <h2 class="title">Mari bertemu dengan anggota tim kami</h2>
+    <section className="section-team">
+      <div className="container">
+        <div className="row justify-content-center text-center">
+          <div className="col-md-8">
+            <div className="header-section">
+              <h3 className="small-title">Tentang Kami</h3>
+              <h2 className="title">Mari bertemu dengan anggota tim kami</h2>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-6 col-lg-4">
-            <div class="single-person">
-              <div class="person-image">
+        <div className="row">
+          <div className="col-sm-6 col-lg-4">
+            <div className="single-person">
+              <div className="person-image">
                 <img src={alvin} alt="" />
-                <span class="icon-wrapper">
-                  <i class="fas fa-drafting-compass"></i>
+                <span className="icon-wrapper">
+                  <i className="fas fa-drafting-compass"></i>
                 </span>
               </div>
-              <div class="person-info">
-                <h3 class="full-name">Alvin Pandu Irawan</h3>
-                <span class="speciality">Hipster</span>
+              <div className="person-info">
+                <h3 className="full-name">Alvin Pandu Irawan</h3>
+                <span className="speciality">Hipster</span>
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="single-person">
-              <div class="person-image">
+          <div className="col-sm-6 col-lg-4">
+            <div className="single-person">
+              <div className="person-image">
                 <img src={jalu} alt="" />
-                <span class="icon-wrapper">
-                  <i class="fas fa-fax"></i>
+                <span className="icon-wrapper">
+                  <i className="fas fa-fax"></i>
                 </span>
               </div>
-              <div class="person-info">
-                <h3 class="full-name">Adecya Jalu Mahadwija</h3>
-                <span class="speciality">Hustler</span>
+              <div className="person-info">
+                <h3 className="full-name">Adecya Jalu Mahadwija</h3>
+                <span className="speciality">Hustler</span>
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="single-person">
-              <div class="person-image">
+          <div className="col-sm-6 col-lg-4">
+            <div className="single-person">
+              <div className="person-image">
                 <img src={tio} alt="" />
-                <span class="icon-wrapper">
-                  <i class="fas fa-code"></i>
+                <span className="icon-wrapper">
+                  <i className="fas fa-code"></i>
                 </span>
               </div>
-              <div class="person-info">
-                <h3 class="full-name">Tio Misbaqul Irawan</h3>
-                <span class="speciality">Hacker</span>
+              <div className="person-info">
+                <h3 className="full-name">Tio Misbaqul Irawan</h3>
+                <span className="speciality">Hacker</span>
               </div>
             </div>
           </div>

@@ -1,0 +1,171 @@
+/* 
+Copas dari https://codepen.io/yoann-b/pen/eYvrzPL
+*/
+
+#random-user {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #003046;
+}
+
+#random-user .header {
+    margin-bottom: 86px;
+}
+
+#random-user .header .small-title {
+    margin-bottom: 14px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FF8527;
+}
+
+#random-user .header .title {
+    font-weight: 700;
+    font-size: 45px;
+    color: white;
+}
+
+#user-card {
+    --user-card-width: 500px;
+    --user-card-ratio: 1.5;
+    --user-beafter-width: 90%;
+    width: var(--user-card-width);
+    height: calc(var(--user-card-width) / var(--user-card-ratio));
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#user-card::after,
+#user-card::before {
+    content: '';
+    position: absolute;
+    width: var(--user-beafter-width);
+    height: var(--user-beafter-width);
+    /* background-color: rgba(1, 1, 1, .2); */
+    /* background: linear-gradient(to right, #ff852741, #ffb8454d); */
+    background: linear-gradient(to right, #FF8527, #FFB945);
+    transition: transform .3s;
+    transform: translateY(0%), translateX(0%);
+}
+
+#user-card::before {
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#user-card::after {
+    bottom: 0;
+    right: 0;
+}
+
+#user-card.loading::before {
+    transform: translateX(25px) translateY(16px);
+}
+
+#user-card.loading::after {
+    transform: translateX(-25px) translateY(-17px);
+}
+
+#user-content {
+    position: relative;
+    z-index: 3;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#user-picture {
+    --picture-size: 110px;
+    width: var(--picture-size);
+    height: var(--picture-size);
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#user-picture>img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(70%);
+    transform: scale(1);
+    opacity: 1;
+    transition: transform .5s, opacity .5s;
+    border-radius: 50%;
+}
+
+#user-infos {
+    text-align: center;
+    color: white !important;
+}
+
+#user-infos>label {
+    display: block;
+    font-size: 1.2em;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+#user-infos>p {
+    height: 20px;
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: .8em;
+}
+
+#user-card.loading #user-picture>img {
+    transform: scale(1.2);
+    opacity: 0;
+}
+
+#user-card.loading #user-picture,
+#user-card.loading #user-infos>label,
+#user-card.loading #user-infos>p {
+    background-color: rgba(1, 1, 1, .1);
+}
+
+#user-picture,
+#user-infos>label,
+#user-infos>p {
+    position: relative;
+    overflow: hidden;
+}
+
+#user-picture::before,
+#user-infos>label::before,
+#user-infos>p::before {
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    bottom: 0;
+    width: 10px;
+    background-color: rgba(255, 255, 255, .1);
+    opacity: 0.3;
+    transform: translateX(-20px) rotate(10deg);
+    transform-origin: 50% 50%;
+}
+
+#user-card.loading #user-picture::before,
+#user-card.loading #user-infos>label::before,
+#user-card.loading #user-infos>p::before {
+    animation: translate_loading 1s infinite;
+}
+
+@keyframes translate_loading {
+    0% {
+        transform: translateX(-20px) rotate(0deg);
+    }
+    100% {
+        transform: translateX(150px) rotate(0deg);
+    }
+}
