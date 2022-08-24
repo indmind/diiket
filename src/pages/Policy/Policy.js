@@ -18,11 +18,11 @@ export default function Contact() {
               Welcome to <b> Diiket</b>.
             </p>
             <p>
-              <b>Diiket</b> (“us”, “we”, or “our”) operates <b>bukulistrik.web.app</b>{" "}
+              <b>Diiket</b> (“us”, “we”, or “our”) operates <b>diiket.web.app</b>{" "}
               (hereinafter referred to as <b>“Service”</b>).
             </p>
             <p>
-              Our Privacy Policy governs your visit to <b>bukulistrik.web.app</b>, and
+              Our Privacy Policy governs your visit to <b>diiket.web.app</b>, and
               explains how we collect, safeguard and disclose information that results
               from your use of our Service.
             </p>
@@ -41,7 +41,7 @@ export default function Contact() {
               2. <b>Definitions</b>
             </p>
             <p>
-              <b>SERVICE</b> means the bukulistrik.web.app website operated by Diiket.
+              <b>SERVICE</b> means the diiket.web.app website operated by Diiket.
             </p>
             <p>
               <b>PERSONAL DATA</b> means data about a living individual who can be
